@@ -1,8 +1,11 @@
 <template name="cardsList">
-  <div class="cards">
-    Hoodydoo
-    {{#each cards}}
-      {{> cardItem}}
-    {{/each}}
+  <div class="card container-fluid">
+    <div class="card-content row">
+      {{#each cards}}
+      <div class="col-xs-3">
+        {{> cardItem}}
+      </div>
+      {{/each}}
+    </div>
   </div>
 </template>
