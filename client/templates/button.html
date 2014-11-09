@@ -1,0 +1,9 @@
+<template name='button'>
+  <div class="play_btn">
+    {{#if currentUser}}
+     <button type="button" class="btn btn-success">play</button>
+    {{else}}
+     <button type="button" class="btn btn-default">log in to play</button>
+    {{/if}}
+  </div>
+</template>

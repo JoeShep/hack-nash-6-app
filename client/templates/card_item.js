@@ -38,7 +38,7 @@ function checkMatch(){
     var $pic2 = $('.flipped:eq(1)').find('img').data('id');
     if( $pic1 === $pic2 ){
       $('.flipped').addClass('matched').removeClass('flipped');
-      $('.matched').children().css('border','5px solid green');
+      $('.matched').children().css('outline','5px solid green');
       // playMultiSound($('audio[id=a'+$pic1+']'));
       // $('#boardContainer').animate({'background-color':'green'},300).delay(300).animate({'background-color':'#7792A8'},200);
       // matches += 1;

@@ -5,8 +5,16 @@ $container: #7792A8;
 $tile1: #b8e7bf;
 $tile2: #BB8ED1;
 
-.card-wrapper {
-  // border: 1px solid red;
+header {
+  padding: 0 15px 15px 15px
+}
+
+.card-content {
+  max-width: 600px;
+  margin: 0 auto;
+  .card-wrapper {
+    padding: 0 !important;
+  }
 }
 
 h2 {
@@ -59,8 +67,7 @@ body {
 }
 
 .tile {
-  // width: 100%;
-  margin: 8px;
+  margin: 3%;
   border: 2px solid #2a1900;
   &:hover {
     background-image: url('noisy-texture2.png');
