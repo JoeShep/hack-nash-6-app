@@ -4,12 +4,17 @@
   <title>Famous Pairs Memory Game</title>
 </head>
 <body>
+  <audio id='wrong' volume="0.4" src="wrong.mp3" preload='auto'></audio>
+  <audio id='ding' src="ding.wav" preload='auto'></audio>
+  <audio id='shuffle' src="shuffle.wav" preload='auto'></audio>
+  {{> audio}}
   <header class="navbar navbar-default">
     <div class="navbar-inner">
       <h2>Famous Pairs</h2>
       <div>
         <ul class="nav navbar-nav">
           <li class="play-btn">{{> button}}</li>
+          <li class="counter">Flips:<span id='flip-count'> 0</span> Matches:<span id='match-count'> 0</span>/10</li>
         </ul>
         <ul class="nav navbar-right">
           <li>{{> loginButtons}}</li>

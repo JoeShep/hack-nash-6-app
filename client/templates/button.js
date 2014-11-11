@@ -12,14 +12,12 @@ function setup() {
   if($(this).text() === 'Reset'){
     location.reload();
   } else {
-    loadPics();
     setShuffle();
-    animateText();
     $('#shuffle')[0].play();
     $('#shuffle').on('ended', function(){
-      playMultiSound($('#ding'));
+      $('#ding')[0].play();
     });
-    $('.play').toggleClass('play reset').text('Reset');
+  // $('.play').toggleClass('play reset').text('Reset');
   }
 }
 
