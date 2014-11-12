@@ -1,0 +1,7 @@
+<template name="content">
+  {{#if currentUser}}
+    {{> cardsList}}
+  {{else}}
+    {{> overlay}}
+  {{/if}}
+</template>

@@ -9,11 +9,29 @@ header {
   padding: 0 15px 15px 15px
 }
 
+.navbar {
+  margin-bottom: 0 !important
+}
+
 .card-content {
+  opacity: 0;
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 50px;
   .card-wrapper {
     padding: 0 !important;
+  }
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  opacity: 0.4;
+  p {
+    color: yellow;
+    text-align: center;
+    font-size: 400%;
   }
 }
 
@@ -33,16 +51,14 @@ h4 {
   }
 }
 
-#btn {
-  float: left;
-  margin-top: 20px;
+.play_btn {
+  width: 100px;
+  margin-right: 15px;
+  outline: none !important;
 }
 
-.play {
-  background-color: #1E8A1A;
-  &:hover {
-    background-color: #30A82C;
-  }
+.reset_btn {
+  @extend .play_btn;
 }
 
 html {
@@ -69,6 +85,7 @@ body {
 .tile {
   margin: 3%;
   border: 2px solid #2a1900;
+  border-radius: 2px;
   &:hover {
     background-image: url('noisy-texture2.png');
   }
@@ -109,7 +126,7 @@ li {
   }
 }
 
-#p1 {
+.p1 {
   position: relative;
   left: -100%;
 }

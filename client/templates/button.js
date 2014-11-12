@@ -9,7 +9,7 @@ Template.button.helpers({
 });
 
 function setup() {
-  if($(this).text() === 'Reset'){
+  if($(".reset_btn").length){
     location.reload();
   } else {
     setShuffle();
@@ -17,7 +17,7 @@ function setup() {
     $('#shuffle').on('ended', function(){
       $('#ding')[0].play();
     });
-  // $('.play').toggleClass('play reset').text('Reset');
+    $('.btn-success').toggleClass('play_btn reset_btn').text('Reset');
   }
 }
 

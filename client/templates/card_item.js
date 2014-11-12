@@ -14,6 +14,10 @@ Template.cardItem.events({
     var target = event.currentTarget,
         $pic = $(target).find('.pic'),
         $tile = $(target).children('.tile');
+
+    if($tile.hasClass('matched') || $('.play_btn').text() === 'play' || $('.flipped').length === 2)
+      return;
+
     if(!$tile.hasClass('flipped') && $('.flipped').length < 2){
       $tile.flip({
         direction:'rl',
